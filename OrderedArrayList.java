@@ -18,4 +18,10 @@ public class OrderedArrayList <T extends Comparable<T>> extends NoNullArrayList<
     super.add(element);
     return true;
   }
+  public T set(int index, T element){
+    T indexEle = get(index);
+    remove(index);
+    add(element);
+    return (indexEle);
+  }
 }
