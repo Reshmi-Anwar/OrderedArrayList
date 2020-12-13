@@ -5,4 +5,7 @@ public class OrderedArrayList <T extends Comparable<T>> extends NoNullArrayList<
   public OrderedArrayList(int startingCapacity){
     super(startingCapacity);
   }
+  public void add(int index, T element){
+    add(element);
+  }
 }
