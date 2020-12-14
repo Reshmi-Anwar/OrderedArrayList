@@ -19,7 +19,7 @@ public class NoNullArrayList<T> extends ArrayList<T> {
     if (element == null){
       throw new IllegalArgumentException("No nulls allowed");
     }
-    super.add(element);
+    super.add(index, element);
   }
   public NoNullArrayList(int initialCapacity){
     super(initialCapacity);
